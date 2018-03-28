@@ -40,5 +40,5 @@ Options | Default | Description
 appendTo: | "#vendor-content" | Name of container to append Skylight in.
 headerText: | "You May Prefer This" | What should the header of Skylight say?
 numOfCells: | 3 | How many cells should show in zone?
-products: | products: [</br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/whey.html",</br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/natwhey.html",</br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/cas.html"</br>] | What Products should show in zone?
+products: | products: [<br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/whey.html",<br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/natwhey.html",<br>&nbsp;&nbsp;&nbsp;&nbsp;"/store/opt/cas.html"</br>] | What Products should show in zone?
 
