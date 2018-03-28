@@ -3,7 +3,7 @@
 ##### Cross Promotional Zone for Bodybuilding.com Product Pages
 
 <br />
-![GitHub Logo](/imgs/skylightScreen.png)
+![Skylight Example Screenshot](/imgs/skylightScreen.png)
 <br />
 
 ## Features
