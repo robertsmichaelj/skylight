@@ -9,7 +9,7 @@
 ## Features
 
 * Choose where to insert Skylight instance
-* Choose what the header reads
+* Choose what the header reads from a list of headers below (or make your own)
 * Choose the number of cells to show
 * Choose which URLs to pull information from
 
