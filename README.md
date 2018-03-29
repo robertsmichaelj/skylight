@@ -19,7 +19,7 @@
 **1. Add script tags at bottom of product block and initialize zone**
 
 ```javascript
-<link rel="stylesheet" href="https://www.bodybuilding.com/scripts/skylight.min.js" />
+<script type="text/javascript" src="https://www.bodybuilding.com/scripts/skylight.min.js"/>
 <script>
     var crossMerch = new Skylight({
         products: [
