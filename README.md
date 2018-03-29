@@ -49,8 +49,8 @@ skyZone: | 1 | Header Zones. Which header should display for this widget?
 ### Current Headers
 
 1. "You May Prefer This",
-2. "Buy These Instead",
-3. "You Buy NOW!",
-4. "You May Prefer This",
-5. "You May Prefer This"
+2. "You May Also Like",
+3. "empty",
+4. "empty",
+5. "empty"
 
