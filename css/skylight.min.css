@@ -1,190 +1,217 @@
 .skylight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    margin: 20px auto;
     max-width: 750px;
     width: 100%;
-    margin: 20px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    opacity: 0;
+    -webkit-transition: .3s opacity;
+    transition: .3s opacity;
+
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    opacity: 0;
-    transition: .3s opacity;
 }
-.skylight .skylight__header {
+.skylight__header {
     margin: 0;
+    color: #232323;
     text-transform: uppercase;
     font: 300 26px/26px ProximaNovaExCnSemiBold, Arial, sans-serif;
-    color: #232323;
 }
-.skylight .skylight__cells {
-    width: 100%;
-    margin: 10px auto 0;
-    box-sizing: border-box;
+.skylight__cells {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px auto 0;
+    width: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.skylight .skylight__cell {
-    width: 33.3333%;
-    padding: 0 0 10px;
+.skylight__cell {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
+    padding: 0 0 10px;
+    width: 33.3333%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-line-pack: start;
     align-content: flex-start;
     justify-content: space-around;
 }
-.skylight .skylight__img__cell {
-    width: 35%;
-    height: 100%;
-    margin: 0;
+.skylight__cell:hover {
+    text-decoration: none;
+}
+.skylight__cell:hover .skylight__product__name {
+    color: #00aeef;
+}
+
+.skylight__img__cell {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: center;
+    -ms-flex-pack: start;
+    -ms-flex-align: center;
+    margin: 0 0 10px;
+    width: 35%;
+    height: 100%;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: start;
     justify-content: flex-start;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
-.skylight .skylight__img {
-    max-height: 80%;
+.skylight__img {
+    display: block;
+    margin: 0;
     max-width: 90%;
+    max-height: 80%;
     width: 100%;
+
     -ms-flex-item-align: center;
     align-self: center;
     -o-object-fit: contain;
     object-fit: contain;
-    margin: 0;
-    display: block;
 }
-.skylight .skylight__text__cell {
-    width: 60%;
+.skylight__text__cell {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: start;
+    margin: 0;
+    width: 60%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-line-pack: start;
     align-content: flex-start;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 0;
 }
-.skylight .skylight__product__name {
-    width: 93%;
-    font: 100 15px/18px Arial, sans-serif;
-    color: #00aeef;
+.skylight__product__name {
     margin: 2px 0 0 0;
+    min-height: 40px;
+    width: 93%;
+    color: #000;
+    font: 100 15px/18px Arial, sans-serif;
     -webkit-transition: color .3s;
     transition: color .3s;
-    min-height: 40px;
 }
-.skylight .skylight__brand__name {
-    width: 100%;
-    font: 13px/13px Arial, sans-serif;
-    color: #5a5a5a;
+.skylight__brand__name {
     margin: 4px 0 0;
+    width: 100%;
+    color: #5a5a5a;
+    font: 13px/13px Arial, sans-serif;
 }
-.skylight .skylight__rating__cell {
-    margin: 10px 0 0;
-    padding: 0;
+.skylight__rating__cell {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
+    margin: 10px 0 0;
+    padding: 0;
+    font: 13px/13px Arial, sans-serif;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    font: 13px/13px Arial, sans-serif;
 }
-.skylight .skylight__rating__number {
-    width: 30px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid #c8c8c8;
-    margin: 0 6px 0 0;
-    padding: 0 2px 0 3px;
+.skylight__rating__number {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
+    margin: 0 6px 0 0;
+    padding: 0 2px 0 3px;
+    width: 30px;
+    height: 24px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    color: #232323;
+    text-align: center;
+    font: 600 13px/14px Arial, sans-serif;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
-    font: 600 13px/14px Arial, sans-serif;
-    color: #232323;
 }
-.skylight .skylight__rating__number__of {
-    width: 100%;
-    font: 13px/13px Arial, sans-serif;
-    text-align: left;
-    color: #5a5a5a;
+.skylight__rating__number__of {
     margin: 5px 0;
+    width: 100%;
+    color: #5a5a5a;
+    text-align: left;
+    font: 13px/13px Arial, sans-serif;
 }
-.skylight .skylight__shipping {
-    margin: 6px 0 0;
-    padding: 0;
+.skylight__shipping {
     display: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: start;
+    margin: 6px 0 0;
+    padding: 0;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
 }
-.skylight .skylight__shipping__img {
+.skylight__shipping__img {
     margin: 5px 0 0;
 }
 /* ----------------------------  MEDIA QUERY ------------------------------ */
@@ -192,59 +219,77 @@
     .skylight {
         padding: 0 10px;
     }
-    .skylight .skylight__cells {
+    .skylight__cells {
         margin: 10px auto;
     }
-    .skylight .skylight__cell {
+    .skylight__cell {
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: start;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-pack: start;
         justify-content: flex-start;
     }
-    .skylight .skylight__img__cell {
+    .skylight__img__cell {
+        margin: 0 0 10px;
         width: 100%;
         height: 120px;
-        margin: 0;
     }
-    .skylight .skylight__img {
-        max-height: 100%;
+    .skylight__img {
+        margin: 0 auto;
         max-width: 96%;
+        max-height: 100%;
+        width: auto;
     }
-    .skylight .skylight__text__cell {
+    .skylight__text__cell {
         width: 100%;
     }
-    .skylight .skylight__product__name {
+    .skylight__product__name {
         min-height: 18px;
     }
 }
 /* ----------------------------  MEDIA QUERY ------------------------------ */
 @media screen and (max-width:500px) {
-    .skylight .skylight__rating__number {
+    .skylight__rating__number {
+        padding: 0 2px 0 2px;
         width: 26px;
         height: 22px;
-        padding: 0 2px 0 2px;
         font: 600 12px/14px Arial, sans-serif;
     }
-    .skylight .skylight__rating__number__of {
+    .skylight__rating__number__of {
         width: 100%;
         font: 12px/13px Arial, sans-serif;
     }
 }
 /* ----------------------------  MEDIA QUERY ------------------------------ */
 @media screen and (max-width:410px) {
-    .skylight .skylight__cells {
+    .skylight__cells {
+        -ms-flex-direction: column;
         flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
     }
-    .skylight .skylight__cell {
-        width: 100%;
+    .skylight__cell {
+        -ms-flex-direction: row;
         flex-direction: row;
+        width: 100%;
+
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
     }
-    .skylight .skylight__img__cell {
+    .skylight__img__cell {
+        margin: 10px 10px 10px 0;
         width: 40%;
         height: 100%;
-        margin: 10px 10px 10px 0;
     }
-    .skylight .skylight__img {
-        max-height: 120px;
+    .skylight__img {
         max-width: 96%;
+        max-height: 120px;
+
+        -ms-flex-item-align: center;
         align-self: center;
     }
 }
