@@ -1,6 +1,6 @@
 # Skylight
 
-##### Cross Promotional Zone for Bodybuilding.com Product Pages
+##### Cross Promotional Widget dynamically pulls JSON information from Bodybuilding.com Product Pages.
 
 <br />
 ![Skylight Example Screenshot](/imgs/skylightScreen.png)
